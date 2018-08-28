@@ -8,41 +8,69 @@ import find from '@/components/wechat/find'
 import me from '@/components/wechat/me'
 
 Vue.use(Router)
-
-export default new Router({
+const router = new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'HelloWorld',
-    //   component: HelloWorld
-    // }
     {
       path: '/',
       name: 'home',
       redirect:'/wechat',
       component: home,
-      children:[
-        {
-          path:'/wechat',
-          name:'wechat',
-          component:wechat
-        },
-        {
-          path:'/mailList',
-          name:'mailList',
-          component:mailList
-        },
-        {
-          path:'/find',
-          name:'find',
-          component:find
-        },
-        {
-          path:'/me',
-          name:'me',
-          component:me
-        },
-      ]
-    }
+    },
+    {
+      path:'/wechat',
+      name:'wechat',
+      component:wechat
+    },
+    {
+      path:'/mailList',
+      name:'mailList',
+      component:mailList
+    },
+    {
+      path:'/find',
+      name:'find',
+      component:find
+    },
+    {
+      path:'/me',
+      name:'me',
+      component:me
+    },
   ]
 })
+// router.beforeEach((to, from, next) => {
+//   if(to.name=='me'){
+//     this.store.dispatch('changfoot',false);
+//   }
+// })
+export default router
+// export default new Router({
+//   routes: [
+//     {
+//       path: '/',
+//       name: 'home',
+//       redirect:'/wechat',
+//       component: home,
+//     },
+//     {
+//       path:'/wechat',
+//       name:'wechat',
+//       component:wechat
+//     },
+//     {
+//       path:'/mailList',
+//       name:'mailList',
+//       component:mailList
+//     },
+//     {
+//       path:'/find',
+//       name:'find',
+//       component:find
+//     },
+//     {
+//       path:'/me',
+//       name:'me',
+//       component:me
+//     },
+//   ]
+// })
