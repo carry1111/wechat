@@ -6,31 +6,31 @@ import mailList from '@/components/wechat/mailList'
 import find from '@/components/wechat/find'
 import me from '@/components/wechat/me'
 
-Vue.use(Router,store)
+Vue.use(Router, store)
 const router = new Router({
   routes: [
     {
       path: '/',
-      redirect:'/wechat',
+      redirect: '/wechat',
     },
     {
-      path:'/wechat',
-      name:'wechat',
+      path: '/wechat',
+      name: 'wechat',
       component:wechat
     },
     {
-      path:'/mailList',
-      name:'mailList',
+      path: '/mailList',
+      name: 'mailList',
       component:mailList
     },
     {
-      path:'/find',
-      name:'find',
+      path: '/find',
+      name: 'find',
       component:find
     },
     {
-      path:'/me',
-      name:'me',
+      path: '/me',
+      name: 'me',
       component:me
     },
   ]

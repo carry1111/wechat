@@ -3,8 +3,8 @@ import Vuex from 'vuex'
 import user from './modules/user'
 vue.use(Vuex)
 const store = new Vuex.Store({
-    modules: {
-      user
-    }
-  })
+  modules: {
+    user
+  }
+})
 export default store;
