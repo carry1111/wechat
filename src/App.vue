@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <foot></foot>
+    <foot v-show="isfoot"></foot>
   </div>
 </template>
 
@@ -9,9 +9,19 @@
 import foot from '@/components/common/foot.vue'
 export default {
   name: 'App',
+  data(){
+    return{
+      isfoot:true
+    }
+  },
   components:{
 		foot
-	}
+  },
+  watch:{
+    $route(){
+      this.isfoot=this.$store.state.user.isfoot;
+    }
+  }
 }
 </script>
 
