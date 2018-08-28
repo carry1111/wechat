@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import store from './../store'
-// import HelloWorld from '@/components/HelloWorld'
-import home from '@/components/wechat/home'
 import wechat from '@/components/wechat/wechat'
 import mailList from '@/components/wechat/mailList'
 import find from '@/components/wechat/find'
@@ -13,9 +11,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
       redirect:'/wechat',
-      component: home,
     },
     {
       path:'/wechat',

@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
-import '../static/css/Base.css'
+import './assets/css/Base.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

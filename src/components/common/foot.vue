@@ -1,6 +1,6 @@
 <template>
     <div id="foot">
-        <tabbar>
+        <tabbar class="footer vux-1px-t">
             <tabbar-item badge="1" selected link="/wechat">
                 <img slot="icon" src="../../assets/images/wechat.png">
                 <span slot="label">微信</span>
@@ -32,6 +32,13 @@ export default {
 }
 </script>
 
-<style>
-
+<style  scoped>
+    .footer{
+        position:fixed;
+        bottom:0;
+        right:0;
+        height:4rem;
+        padding-top:.5rem;
+        box-sizing: border-box;
+    }
 </style>    
