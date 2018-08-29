@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import store from './../store'
+
 import wechat from '@/components/wechat/wechat'
 import mailList from '@/components/wechat/mailList'
 import find from '@/components/wechat/find'
 import me from '@/components/wechat/me'
+
+import chat from '@/components/wechat/chat'
 
 Vue.use(Router, store)
 const router = new Router({
@@ -33,13 +36,18 @@ const router = new Router({
       name: 'me',
       component:me
     },
+    {
+      path: '/chat',
+      name: 'chat',
+      component:chat
+    },
   ]
 })
 router.beforeEach((to, from, next) => {
-  if(to.name=='zanwei'){
-    store.dispatch('changfoot',false);
-  }else{
+  if(to.name=='wechat'||to.name=='mailList'||to.name=='find'||to.name=='me'){
     store.dispatch('changfoot',true);
+  }else{
+    store.dispatch('changfoot',false);
   }
   next()
 })

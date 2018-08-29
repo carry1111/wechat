@@ -1,20 +1,20 @@
 <template>
     <div id="foot">
         <tabbar class="footer vux-1px-t">
-            <tabbar-item badge="1" selected link="/wechat">
-                <img slot="icon" src="../../assets/images/wechat.png">
+            <tabbar-item selected link="/wechat">
+                <i slot="icon" class="iconfont icon-weixin"></i>
                 <span slot="label">微信</span>
             </tabbar-item>
-            <tabbar-item show-dot link="/mailList">
-                <img slot="icon" src="../../assets/images/mailList.png">
+            <tabbar-item link="/mailList">
+                <i slot="icon" class="iconfont icon-tongxunlu"></i>
                 <span slot="label">通讯录</span>
             </tabbar-item>
             <tabbar-item link="/find">
-                <img slot="icon" src="../../assets/images/find.png">
+                <i slot="icon" class="iconfont icon-faxian"></i>
                 <span slot="label">发现</span>
             </tabbar-item>
             <tabbar-item link="/me">
-                <img slot="icon" src="../../assets/images/me.png">
+                <i slot="icon" class="iconfont icon-wo"></i>
                 <span slot="label">我</span>
             </tabbar-item>
         </tabbar>
