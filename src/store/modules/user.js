@@ -1,5 +1,5 @@
 const state={
-    isfoot:true
+    isfoot:''
 }
 // const getters={
 

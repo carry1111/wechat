@@ -49,17 +49,17 @@ export default{
 
 <style scoped>
 	#wechat{
-		margin-top:3.5rem;
-		margin-bottom:4rem;
+		margin-top:1.8rem;
+		margin-bottom:1.8rem;
 	}
 	.item{
-		font-size:1.5rem;
+		font-size:.5rem;
 		text-align: left;
-		padding:1rem;
+		padding:.2rem;
 	}
 	.title{
-		font-size:1rem;
-		padding-top:.5rem;
+		font-size:.5rem;
+		padding-top:.2rem;
 		box-sizing: border-box;
 	}
 </style>

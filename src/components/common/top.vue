@@ -1,8 +1,5 @@
 <template>
     <div id="top">
-        <!-- <div class="back">
-            
-        </div> -->
         <div class="back">
             <slot name="back">
                 <!-- <i class="iconfont icon-fanhui"></i> -->
@@ -45,15 +42,20 @@ export default {
         position:fixed;
         width:100%;
         z-index:1000;
-        height:3.5rem;
-        line-height:3.5rem;
+        height:1.6rem;
+        line-height:1.6rem;
         top:0;
         left:0;
-        background:#ccc;
+        background:#484848;
         text-align:left;
     }
+    #top::after{
+        content:'';
+        display:block;
+        clear:both;
+    }
     .iconfont{
-        font-size:2.2rem;
+        font-size:1rem;
     }
     .back,.title,.search,.add{
         float:left;
@@ -65,8 +67,8 @@ export default {
     }
     .title{
         width:60%;
-        font-size:1.3rem;
-        padding-left:.5rem;
+        font-size:.6rem;
+        padding-left:.1rem;
     }
     .search{
         float:right;
